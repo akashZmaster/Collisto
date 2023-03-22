@@ -22,9 +22,9 @@ spring:
       discovery:
         enabled: true
         register-enabled: true
-        server-addr: 124.221.240.141:9852
-        namespace: test
-        group: DEFAULT_GROUP
+        server-addr:
+        namespace:
+        group:
 
 ribbon:
   nacos:

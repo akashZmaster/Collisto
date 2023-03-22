@@ -9,13 +9,11 @@ spring:
       enabled: false
     nacos:
       discovery:
-        server-addr: 124.221.240.141:9852
-        group: DEFAULT_GROUP
+        server-addr:
+        group:
         metadata:
-          version: v1
-        username: devlop
-        password: "hello@1.2"
-        namespace: test
+          version:
+        namespace:
 
 management:
   endpoints:
