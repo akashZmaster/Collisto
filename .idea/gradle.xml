@@ -18,9 +18,9 @@
       <GradleProjectSettings>
         <option name="delegatedBuild" value="true" />
         <option name="testRunner" value="GRADLE" />
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/GateWay" />
-        <option name="gradleHome" value="E:/Gradle/gradle-7.5.1" />
+        <option name="gradleHome" value="E:/Gradle/gradle-8.0.2" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
