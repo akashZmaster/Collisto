@@ -1,0 +1,31 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: auth
+          uri: lb://API-AUTH
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
+    nacos:
+      discovery:
+        enabled: true
+        register-enabled: true
+        server-addr: 124.221.240.141:9852
+        namespace: test
+        group: DEFAULT_GROUP
+
+ribbon:
+  nacos:
+    enabled: false

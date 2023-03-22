@@ -1,0 +1,31 @@
+server:
+  port: 8899
+
+spring:
+  application:
+    name: API-AUTH
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    nacos:
+      discovery:
+        server-addr: 124.221.240.141:9852
+        group: DEFAULT_GROUP
+        metadata:
+          version: v1
+        username: devlop
+        password: "hello@1.2"
+        namespace: test
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+
+
