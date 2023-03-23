@@ -1,0 +1,25 @@
+server:
+  port: 8988
+
+spring:
+  application:
+    name: API-GPT
+  config:
+    import:
+      - nacos:api-chatgpt.yaml
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    nacos:
+      server-addr: 10.10.10.10
+      config:
+        group: collisto
+        namespace: test
+        file-extension: yaml
+      discovery:
+        group: collisto
+        metadata:
+          version: v1
+        namespace: test
+
+
