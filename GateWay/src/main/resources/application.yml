@@ -5,29 +5,24 @@ spring:
   application:
     name: API-GATEWAY
   config:
-    import: nacos:api-gateway.yaml
+    import:
+      - nacos:api-gateway.yaml
   cloud:
     compatibility-verifier:
       enabled: false
-    gateway:
-      discovery:
-        locator:
-          enabled: true
     nacos:
-      server-addr:
+      server-addr: 10.10.10.10
       config:
-        group:
+        group: collisto
         namespace: test
         file-extension: yaml
       discovery:
-        group:
+        group: collisto
         namespace: test
         enabled: true
         register-enabled: true
         metadata:
           version: v1
-
-
 ribbon:
   nacos:
     enabled: false

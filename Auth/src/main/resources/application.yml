@@ -7,23 +7,17 @@ spring:
   cloud:
     compatibility-verifier:
       enabled: false
+    loadbalancer:
+      ribbon:
+        enabled: false
     nacos:
+      server-addr: 10.10.10.10
       discovery:
-        server-addr:
-        group:
+        group: collisto
         metadata:
           version: v1
         namespace: test
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    shutdown:
-      enabled: true
-    health:
-      show-details: always
-
-
+ribbon:
+  nacos:
+    enabled: false
