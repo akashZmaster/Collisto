@@ -7,11 +7,11 @@
 
 技术栈：SpringBoot3.1.0-M1 + Gradle8.0.2 + JDK19
 
-| 应用          | 端口   | 用途     |
-|-------------|------|--------|
-| API-GATEWAY | 8888 | 网关     |
-| API-AUTH    | 8899 | 用户访问鉴权 |
-
+| 应用          | 端口   | 用途       |
+|-------------|------|----------|
+| API-GATEWAY | 8888 | 网关       |
+| API-AUTH    | 8899 | 用户访问鉴权   |
+| API-GPT     | 8988 | CHAT-GPT |
 ### 快速部署：
 1. 导入项目后，点击 File -> Project Structure 
    1. Project中调整SDK为JDK17/JDK19，并调整Language Level为对应版本17/19
