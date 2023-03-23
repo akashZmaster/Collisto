@@ -12,8 +12,8 @@ spring:
         server-addr:
         group:
         metadata:
-          version:
-        namespace:
+          version: v1
+        namespace: test
 
 management:
   endpoints:

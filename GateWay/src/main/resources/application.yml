@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: API-GATEWAY
+  config:
+    import: nacos:api-gateway.yaml
   cloud:
     compatibility-verifier:
       enabled: false
@@ -11,20 +13,20 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: auth
-          uri: lb://API-AUTH
-          predicates:
-            - Path=/user/**
-          filters:
-            - StripPrefix=1
     nacos:
+      server-addr:
+      config:
+        group:
+        namespace: test
+        file-extension: yaml
       discovery:
+        group:
+        namespace: test
         enabled: true
         register-enabled: true
-        server-addr:
-        namespace:
-        group:
+        metadata:
+          version: v1
+
 
 ribbon:
   nacos:
