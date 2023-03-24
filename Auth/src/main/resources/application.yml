@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: API-AUTH
+  config:
+    import: nacos:api-chatgpt.yaml
   cloud:
     compatibility-verifier:
       enabled: false
