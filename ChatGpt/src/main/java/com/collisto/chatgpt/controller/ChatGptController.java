@@ -19,4 +19,16 @@ public class ChatGptController {
         return chatGptService.getNormalChat(context);
     }
 
+    @CrossOrigin(origins = "*", maxAge = 36000)
+    @RequestMapping(value = "/chat/{personality}/{context}")
+    public String getPersonalityChat(@PathVariable String personality, @PathVariable String context) {
+        return chatGptService.getPersonalityChat(personality, context);
+    }
+
+    @CrossOrigin(origins = "*", maxAge = 36000)
+    @RequestMapping(value = "/chat/stream/{personality}/{context}")
+    public void getStreamChat(@PathVariable String personality, @PathVariable String context) {
+        chatGptService.getStreamChat(personality, context);
+    }
+
 }

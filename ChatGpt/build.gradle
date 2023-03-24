@@ -1,6 +1,6 @@
 archivesBaseName = "ChatGpt"
 dependencies {
-    implementation 'com.github.plexpt:chatgpt:4.0.4'
+    implementation 'com.github.plexpt:chatgpt:4.0.5'
 }
 tasks.register("prepareKotlinBuildScriptModel") {}
 
