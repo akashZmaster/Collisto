@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17">
+    <bytecodeTargetLevel target="19">
       <module name="Auth" target="17" />
       <module name="Auth.main" target="17" />
       <module name="Auth.test" target="17" />
@@ -10,6 +10,7 @@
       <module name="ChatGpt.test" target="17" />
       <module name="Collisto.main" target="17" />
       <module name="Collisto.test" target="17" />
+      <module name="GateWay" target="17" />
       <module name="GateWay.main" target="17" />
       <module name="GateWay.test" target="17" />
     </bytecodeTargetLevel>

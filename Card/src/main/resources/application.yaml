@@ -1,17 +1,16 @@
 server:
-  port: 8899
+  port: 8999
 
 spring:
   application:
-    name: API-AUTH
+    name: API-CARD
   config:
-    import: nacos:api-chatgpt.yaml
+    import:
+      - nacos:api-common.yaml
+      - nacos:api-card.yaml
   cloud:
     compatibility-verifier:
       enabled: false
-    loadbalancer:
-      ribbon:
-        enabled: false
     nacos:
       server-addr: 10.10.10.10
       config:
@@ -23,7 +22,3 @@ spring:
         metadata:
           version: v1
         namespace: test
-
-ribbon:
-  nacos:
-    enabled: false

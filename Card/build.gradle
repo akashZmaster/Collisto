@@ -1,0 +1,8 @@
+archivesBaseName = "Card"
+dependencies {
+    implementation 'com.mysql:mysql-connector-j:8.0.32'
+    implementation 'hikari-cp:hikari-cp:3.0.1'
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.3.1'
+}
+tasks.register("prepareKotlinBuildScriptModel") {}
+
