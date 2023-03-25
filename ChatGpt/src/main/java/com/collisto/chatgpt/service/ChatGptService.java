@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.io.Serializable;
 import java.net.Proxy;
 import java.util.Arrays;
@@ -81,16 +79,20 @@ public class ChatGptService implements Serializable {
                 .maxTokens(3000)
                 .temperature(0.9)
                 .build();
-
-        ChatCompletionResponse response = chatGPT.chatCompletion(chatCompletion);
-        Message res = response.getChoices().get(0).getMessage();
-        return prefix + res.getContent();
+        try {
+            ChatCompletionResponse response = chatGPT.chatCompletion(chatCompletion);
+            Message res = response.getChoices().get(0).getMessage();
+            return prefix + res.getContent();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     /**
      * 流式聊天
+     *
      * @param personality 人格
-     * @param context 上下文
+     * @param context     上下文
      */
     public void getStreamChat(String personality, String context) {
         Proxy proxy = Proxys.http(ip, port);

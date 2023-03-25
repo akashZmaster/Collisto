@@ -35,6 +35,9 @@ public class TarotCard implements Serializable {
     @TableField(value = "negative_img")
     private String negativeImg; // 逆位图片
 
+    @TableField(value = "tarot_type")
+    private Integer tarotType; // 卡牌类型
+
     public Integer getId() {
         return id;
     }
@@ -98,4 +101,13 @@ public class TarotCard implements Serializable {
     public void setNegativeImg(String negativeImg) {
         this.negativeImg = negativeImg;
     }
+
+    public Integer getTarotType() {
+        return tarotType;
+    }
+
+    public void setTarotType(Integer tarotType) {
+        this.tarotType = tarotType;
+    }
+
 }

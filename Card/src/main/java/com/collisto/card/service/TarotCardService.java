@@ -15,4 +15,8 @@ public class TarotCardService {
         return tarotCardMapper.insert(tarotCard);
     }
 
+    public TarotCard selectById(Integer id){
+        return tarotCardMapper.selectById(id);
+    }
+
 }

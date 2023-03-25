@@ -16,7 +16,7 @@ public class TarotKeyWord implements Serializable {
     private Integer id; // 主键
 
     @TableField(value = "card_id")
-    private String cardId; // 卡牌id
+    private Integer cardId; // 卡牌id
 
     @TableField (value = "cn_keyword")
     private String cnKeyword; // 中文关键词
@@ -44,11 +44,11 @@ public class TarotKeyWord implements Serializable {
         this.id = id;
     }
 
-    public String getCardId() {
+    public Integer getCardId() {
         return cardId;
     }
 
-    public void setCardId(String cardId) {
+    public void setCardId(Integer cardId) {
         this.cardId = cardId;
     }
 
