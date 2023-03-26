@@ -56,8 +56,8 @@ public class ChatGptService implements Serializable {
     /**
      * 人格聊天
      *
-     * @param personality
-     * @param context
+     * @param personality 人格
+     * @param context     上下文
      * @return
      */
     public String getPersonalityChat(String personality, String context) {
@@ -77,8 +77,11 @@ public class ChatGptService implements Serializable {
                 .model(ChatCompletion.Model.GPT_3_5_TURBO.getName())
                 .messages(Arrays.asList(system, message))
                 .maxTokens(3000)
-                .temperature(0.9)
+                .temperature(0.85)
+                .presencePenalty(2.0)
+                .frequencyPenalty(2.0)
                 .build();
+
         try {
             ChatCompletionResponse response = chatGPT.chatCompletion(chatCompletion);
             Message res = response.getChoices().get(0).getMessage();
@@ -86,6 +89,7 @@ public class ChatGptService implements Serializable {
         } catch (Exception e) {
             return null;
         }
+
     }
 
     /**
