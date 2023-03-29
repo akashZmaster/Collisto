@@ -8,7 +8,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="E:/Gradle/gradle-8.0.2" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../gradle-7.6.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/Card" />
             <option value="$PROJECT_DIR$/ChatGpt" />
             <option value="$PROJECT_DIR$/GateWay" />
+            <option value="$PROJECT_DIR$/WeChat" />
           </set>
         </option>
       </GradleProjectSettings>

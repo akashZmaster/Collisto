@@ -2,17 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="19">
-      <module name="Auth" target="17" />
-      <module name="Auth.main" target="17" />
-      <module name="Auth.test" target="17" />
-      <module name="ChatGpt" target="17" />
-      <module name="ChatGpt.main" target="17" />
-      <module name="ChatGpt.test" target="17" />
-      <module name="Collisto.main" target="17" />
-      <module name="Collisto.test" target="17" />
-      <module name="GateWay" target="17" />
-      <module name="GateWay.main" target="17" />
-      <module name="GateWay.test" target="17" />
+      <module name="WeChat" target="17" />
+      <module name="WeChat.main" target="17" />
+      <module name="WeChat.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
